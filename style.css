@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1100px;
+  background-color: #fff5f8;
+}
+
+/* WARNA */
+.bg-pink {
+  background-color: #f8c6d7;
+  color: #704454;
+}
+
+.bg-pink-muda {
+  background-color: #fff0f5;
+  color: #704454;
+}
+
+.pink {
+  color: #dc789c;
+}
+
+.coklat {
+  color: #704454;
+}
+
+/* UKURAN FONT */
+.fz-1 {
+  font-size: 0.5rem;
+}
+.fz-2 {
+  font-size: 0.7rem;
+}
+.fz-3 {
+  font-size: 1rem;
+}
+.fz-4 {
+  font-size: 1.2rem;
+}
+.fz-5 {
+  font-size: 1.4rem;
+}
+
+/* PENGATURAN JARAK DALAM */
+.p-1 {
+  padding: 5px;
+}
+.p-2 {
+  padding: 10px;
+}
+.p-3 {
+  padding: 15px;
+}
+.p-4 {
+  padding: 20px;
+}
+.p-5 {
+  padding: 25px;
+}
+
+/* PENGATURAN JARAK LUAR */
+.m-1 {
+  margin: 5px;
+}
+.m-2 {
+  margin: 10px;
+}
+.m-3 {
+  margin: 15px;
+}
+.m-4 {
+  margin: 20px;
+}
+.m-5 {
+  margin: 25px;
+}
+
+/* PENGATURAN JARAK BAWAH*/
+.mb-1 {
+  margin-bottom: 5px;
+}
+.mb-2 {
+  margin-bottom: 10px;
+}
+.mb-3 {
+  margin-bottom: 15px;
+}
+.mb-4 {
+  margin-bottom: 20px;
+}
+.mb-5 {
+  margin-bottom: 25px;
+}
+
+/* PENGATURAN TULISAN */
+.ta-c {
+  text-align: center;
+}
+
+/* PENGATURAN SUSUNAN KARTU */
+.grid {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* GAMBAR UTAMA*/
+.bagian-utama {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.gambar-utama {
+  width: 50%;
+  height: 220px;
+}
+
+.teks-utama {
+  width: 50%;
+  padding: 10px;
+}
+
+/* PENGATURAN KARTU JENIS KUCING */
+.card {
+  overflow: hidden;
+  background-color: #f8dce6;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 125px;
+  object-fit: contain;
+}
+
+.card-h3 {
+  padding: 8px;
+  color: #704454;
+}
+
+/* TAMPILAN LAPTOP */
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1100px;
+    padding: 25px;
+  }
+
+  /* GAMBAR UTAMA */
+  .bagian-utama {
+    display: flex;
+    align-items: center;
+  }
+
+  .gambar-utama {
+    width: 50%;
+    height: 420px;
+  }
+
+  .teks-utama {
+    width: 50%;
+    padding: 35px;
+  }
+
+  .teks-utama h1 {
+    font-size: 2.5rem;
+  }
+
+  .teks-utama h2 {
+    font-size: 2rem;
+  }
+
+  .teks-utama p {
+    font-size: 1.1rem;
+  }
+
+  /* KARTU JENIS KUCING */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .card-h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* TAMPILAN IPAD / TABLET */
+
+@media (min-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  /* GAMBAR UTAMA */
+  .bagian-utama {
+    display: flex;
+    align-items: center;
+    min-height: 320px;
+  }
+
+  .gambar-utama {
+    width: 50%;
+    height: 320px;
+  }
+
+  .teks-utama {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .teks-utama h1 {
+    font-size: 2rem;
+  }
+
+  .teks-utama h2 {
+    font-size: 1.7rem;
+  }
+
+  .teks-utama p {
+    font-size: 1rem;
+  }
+
+  /* KARTU JENIS KUCING */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .card-h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 599px) {
+  body {
+    padding: 10px;
+  }
+
+  /* GAMBAR UTAMA */
+  .bagian-utama {
+    display: flex;
+    align-items: center;
+  }
+
+  .teks-utama {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .gambar-utama {
+    width: 55%;
+    height: 360px;
+  }
+
+  .teks-utama h1 {
+    font-size: 1.5rem;
+  }
+
+  .teks-utama h2 {
+    font-size: 1.2rem;
+  }
+
+  .teks-utama h3 {
+    font-size: 1rem;
+  }
+
+  .teks-utama p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  /* KARTU JENIS KUCING */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .card-h3 {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
